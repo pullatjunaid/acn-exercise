@@ -1,0 +1,8 @@
+.main-container{
+    background-color: #698c8a;
+    height: 100vh;
+    width: fit-content;
+    padding: 15px;
+    padding-top: 30px;
+    border-radius: 15px;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<title>Online Book Store</title>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        #sidebar {
+            background-attachment: fixed;
+            background-image: url('https://www.freeppt7.com/uploads/200220/1-2002200Z10c24.JPG');
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(216, 226, 197);">
+    <script>
+        var data = [
+            {
+                title: "Basic Physics",
+                content: "Basic Physics: A Self-Teaching GuideHere is the most practical, complete, and easy-to-use book available for understanding physics. Even if you do not consider yourself a science student,  this   book helps make learning a pleasure. Whether you need help in a class, want to review the  basics for  a test, or simply have always been curious about such physical phenomena as energy, the big  bang theory, sound, electricity, light, and color, you have come to the right place."
+            },
+            {
+                title: "Thermodynamics",
+                content: "Enrico Fermi (1901–1954) was an Italian-American physicist particularly known for his work on the development of the first nuclear reactor and for his contributions to the development of quantum theory, nuclear and particle physics, and statistical mechanics. He was awarded the 1938 Nobel Prize in Physics for his work on induced radioactivity. Fermi is widely regarded as one of the leading scientists of the 20th century, highly accomplished in both theory and experiment. Along with J. Robert Oppenheimer, he is frequently referred to as the father of the atomic bomb. His lecture notes, especially those for quantum mechanics, nuclear physics, and thermodynamics, were transcribed into books which are still in print, including this book in particular THERMODYNAMICS, which remains his most important publication. With his characteristic clarity, in this classic on Thermodynamics, Fermi explains the First and Second Laws of Thermodynamics, entropy, thermodynamic potentials, and much more."
+            },
+            {
+                title: 'Dark Matter in Astro- and Particle Physics',
+                content: "The Fourth HEIDELBERG International Conference on Dark Matter in Astro­ and Particle Physics, DARK2002, was held in Cape Town, South Africa, in the period 4-9 February 2002. This majestic natural area was the site of the first conference of this series (hosted since 1996 in Heidelberg) to be held outside of Germany. Dark Matter has become one of the most exciting and central fields of as­ trophysics, particle physics and cosmology. The conference covered, as usual for this series, a large range of topics, theoretical and experimental. Topics included Astronomical Evidence for Dark Matter, the Cosmic Microwave Background, Supersymmetry, Inflation and Dark Energy, Structure Formation, Hot and Cold Dark Matter, and Ultrahigh Energy Cosmic Rays all of which were represented by experts in the field. It was very nice to see again many of our 'old' friends in Dark Matter here in South Africa. The organizers were very glad to see, in addition to world experts, the new generation here. Many young participants gave very nice professional talks during the conference. We are grateful to John Ellis for doing an incredible job preparing his excellent summary talk during the sessions. Some special interest and intensive discussions were naturally raised by the first announcement of terrestrial evidence for hot dark matter, obtained from neutrino less double beta decay. This now adds to the evidence for cold dark matter which we have from DAM A for several years already, and which remained unchallenged up to now by other experiments"
+            },
+            {
+                title: 'Quantum Physics in Minutes',
+                content: "Quantum physics is the most fundamental -- but also the most baffling -- branch of science. Allowing for dead-and-alive cats, teleportation, antimatter, and parallel universes, as well as underpinning all of our digital technology, it's as important as it is mind-bending. This clear and compact book demystifies the strange and beautiful quantum world, and hence the nature of reality itself. Contents include: Schrodinger's cat, inside the atom, the particle zoo, the Higgs boson, Heisenberg's uncertainty principle, God playing dice, relativity, the Big Bang, dark energy and matter, black holes, the fate of the Universe, the Theory of Everything, quantum gravity, string theory, the multiverse, instant communication, quantum computing and cryptography, superconductivity, quantum biology, quantum consciousness, and much more. Written as a series of mini essays with 200 simple diagrams to help understanding, there can be no easier guide to this notoriously confusing subject. At last it's possible for non-specialists to understand quantum theory and its central role in the birth of the universe and the very existence of life."
+            },
+            {
+                title: 'Physics of Everyday Phenomena',
+                content: "The Physics of Everyday Phenomena introduces students to the basic concepts of physics, using examples of common occurrences in everyday life. Intended for use in a one-semester or two-semester course in conceptual physics, this book is written in a narrative style, frequently using questions designed to draw the reader into a dialogue about the ideas of physics. This inclusive style allows the book to be used by anyone interested in exploring the nature of physics and explanations of everyday physical phenomena. Beginning students will benefit from the large number of student aids and the reduced math content. Professors will appreciate the organization of the material and the wealth of pedagogical tools.McGraw-Hill's Connect, is also available as an optional, add on item. Connect is the only integrated learning system that empowers students by continuously adapting to deliver precisely what they need, when they need it, how they need it, so that class time is more effective. Connect allows the professor to assign homework, quizzes, and tests easily and automatically grades and records the scores of the student's work. Problems are randomized to prevent sharing of answers and may also have a multi-step solution which helps move the students' learning along if they experience difficulty."
+            },
+
+            {
+                title: "Encounters at the Heart of the World: A History of the Mandan People",
+                content: "The Mandan Indians were the iconic Plains people whose teeming, busy towns on the upper Missouri River were for centuries at the center of the North American universe. We know of them mostly because Lewis and Clark spent the winter of 1804-1805 with them, but why don't we know more? In this extraordinary book, Fenn retrieves their history by piecing together important new discoveries in archaeology, anthropology, geology, climatology, epidemiology, and nutritional science. Her original interpretation of these diverse research findings offers us a new perspective."
+            },
+            {
+                title: "Broken Lives: How Ordinary Germans Experienced the 20th Century",
+                content: "Broken Lives: How Ordinary Germans Experienced the 20th Century The Mandan Indians were the iconic Plains people whose teeming, busy towns on the upper Missouri River were for centuries at the center of the North American universe. We know of them mostly because Lewis and Clark spent the winter of 1804-1805 with them, but why don't we know more? In this extraordinary book, Fenn retrieves their history by piecing together important new discoveries in archaeology, anthropology, geology, climatology, epidemiology, and nutritional science. Her original interpretation of these diverse research findings offers us a new perspective."
+            },
+            {
+                title: "Rites of Spring: the Great War and the Birth of the Modern Age",
+                content: "Rites of Spring probes the origins, impact, and aftermath of WWI, from the premiere of Stravinsky's ballet The Rite of Spring in 1913 to the death of Hitler in 1945. Recognizing that The Great War was the psychological turning point for modernism as a whole, Eksteins examines the lives of ordinary people, works of modern literature, and pivotal historical events to redefine the way we look at our past and toward our future."
+            },
+            {
+                title: "The History of the Ancient World",
+                content: "A lively and engaging narrative history showing the common threads in the cultures that gave birth to our own. Dozens of maps provide a clear geography of great events, while timelines give the reader an ongoing sense of the passage of years and cultural interconnection. Literature, epic traditions, private letters and accounts connect kings and leaders with the lives of those they ruled."
+            } 
+        ]
+    </script>
+    <div class="container-fluid px-0">
+        <div class="row no-gutters min-vh-100">
+            <div style="text-align: center;">
+                <h1>Online Book Store</h1>
+            </div>
+            <div style="background-color: rgb(242, 248, 231);">
+                <div id="sidebar" class="col-sm-3 bg-dark flex-grow-1" style="width: 30%;float: left;">
+                    <div style="text-transform: uppercase;font-weight: bold;">
+                        <h4 class="text-white">Science</h4>
+                        <a href="#" onclick="myFunction(0)" class="text-white nav-link"> Basic Physics</a>
+                        <br />
+                        <a href="#" onclick="myFunction(1)" class="text-white nav-link">Thermodynamics</a>
+                        <br />
+                        <a href="#" onclick="myFunction(2)" class="text-white nav-link">Dark Matter in Astro- and
+                            Particle Physics</a>
+                        <br />
+                        <a href="#" onclick="myFunction(3)" class="text-white nav-link">Quantum Physics in Minutes</a>
+                        <br />
+                        <a href="#" onclick="myFunction(4)" class="text-white nav-link">Physics of Everyday
+                            Phenomena</a>
+                    </div>
+                    <div style="text-transform: uppercase;font-weight: bold;">
+                        <h4 class="text-white">History</h4>
+                        <a href="#" onclick="myFunction(5)" class="text-white nav-link">Encounters at the Heart of the World: A History of the Mandan People</a>
+                        <br />
+                        <a href="#" onclick="myFunction(6)" class="text-white nav-link">Broken Lives: How Ordinary Germans Experienced the 20th Century</a>
+                        <br />
+                        <a href="#" onclick="myFunction(7)" class="text-white nav-link">Rites of Spring: the Great War and the Birth of the Modern Age</a>
+                        <br />
+                        <a href="#" onclick="myFunction(8)" class="text-white nav-link">The History of the Ancient World</a>
+                        <br /> 
+                    </div>
+
+                </div>
+                <div style="background-color: rgb(242, 248, 231);width: 70%;float: left;">
+                    <div class="col p-4 d-none" id="book1">
+                        <p id="bookHeading" class="h1">THE GENE: AN INTIMATE HISTORY BY SIDDHARTHA MUKHERJEE</p>
+                        <p id="bookcontent">Basic Physics: A Self-Teaching GuideHere is the most practical, complete,
+                            and easy-to-use
+                            book
+                            available for understanding physics. Even if you do not consider yourself a science student,
+                            this
+                            book helps make learning a pleasure. Whether you need help in a class, want to review the
+                            basics for
+                            a test, or simply have always been curious about such physical phenomena as energy, the big
+                            bang
+                            theory, sound, electricity, light, and color, you have come to the right place.</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <script>
+        function myFunction(book) {
+            // var x = document.getElementById(book);
+            document.getElementById('bookHeading').innerHTML = data[book].title;
+            document.getElementById('bookcontent').innerHTML = data[book].content
+            // if (x.style.display === "none") {
+            //     x.style.display = "block";
+            // } else {
+            //     x.style.display = "none";
+            // }
+        }
+    </script>
+</body>
