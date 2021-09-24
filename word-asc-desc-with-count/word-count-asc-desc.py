@@ -32,7 +32,7 @@ def countTexts():
 
 fileName=input(str("Enter file name: "))
 if os.path.exists(fileName):
-    print("File exists")
+    print("File exists \n")
     countTexts()
 else:
     print("File does not exists")
