@@ -8,3 +8,11 @@ GRANT ALL PRIVILEGES ON dns.* TO 'newuser'@'localhost';
 create database dns;
 create table dnslist;
 create table dnslist (id int NOT NULL AUTO_INCREMENT,domain text, ipaddress text,PRIMARY KEY(id));
+
+1. install mysql in your mechine
+2. create a database called 'dns'
+3. create table dnslist (id int NOT NULL AUTO_INCREMENT,domain text, ipaddress text,PRIMARY KEY(id));
+4. insert some values, 
+   
+   Ex:  "github.com", "207.97.227.239"
+   insert into dnslist (domain, ipaddress) values ("github.com", "207.97.227.239")
