@@ -2,7 +2,7 @@ import socket
 
 hostname = socket.gethostname()
 ipaddr = "127.0.0.1"
-s = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
+s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 addr = (ipaddr, 1234)
 
 c = "Y"
@@ -14,4 +14,3 @@ while c.upper() == "Y":
     print(f"The ip for the domain name {req_domain} : {reply_ip}")
     c = input("Continue? (y/n)")
     # s.close()
-

@@ -1,0 +1,10 @@
+(host="localhost",
+user="newuser",
+password="password",
+database="dns")
+
+GRANT ALL PRIVILEGES ON dns.* TO 'newuser'@'localhost';
+
+create database dns;
+create table dnslist;
+create table dnslist (id int NOT NULL AUTO_INCREMENT,domain text, ipaddress text,PRIMARY KEY(id));

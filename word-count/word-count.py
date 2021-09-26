@@ -15,6 +15,7 @@ def countTexts():
                 count=count+1
 
         print("The word",wordToCount,"is occuring",count,"times")
+        exit()
 
 fileName=input(str("Enter file name: "))
 if os.path.exists(fileName):
@@ -22,3 +23,4 @@ if os.path.exists(fileName):
     countTexts()
 else:
     print("File does not exists")
+    exit()
