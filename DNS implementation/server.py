@@ -2,12 +2,7 @@ import socket
 import mysql.connector
 
 mydb = ""
-dns_table = {
-    "github.com": "207.97.227.239",
-    "reddit.com": "72.247.244.88",
-    "www.youtube.com": "142.250.67.46",
-    "www.google.com": "142.250.183.228",
-}
+
 
 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
