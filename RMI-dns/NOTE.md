@@ -19,4 +19,3 @@ java MyServer
 5)start the client application in another command prompt  
   
 java MyClient  
- 
