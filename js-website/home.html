@@ -7,9 +7,8 @@
 </head>
 
 <body>
-    <script> 
+    <script>
         is_visible = false;
-        
 
         function showAll() {
             if (is_visible) {
@@ -39,6 +38,14 @@
 
     </script>
     <div class="home-page">
+        <div class="theme-block">
+            <div class="d-f-row">
+                <div><strong>Theme</strong></div>
+                <div> <button type="button" onclick="changeBgClr('Cyan')">Cyan Theme</button></div>
+                <div> <button type="button" onclick="changeBgClr('Grey')">Grey Theme</button></div>
+                <div>Active time: <strong id="active-time"></strong></div>
+            </div>
+        </div>
         <div class="slider-block">
             <div class="slideshow-container">
 
@@ -74,53 +81,53 @@
                 <span class="dot" onclick="currentSlide(3)"></span>
             </div>
         </div>
-        <div class="theme-block">
+        <div class="d-f-row-c">
             <div>
-                <div><strong>Theme</strong></div>
-                <div> <button type="button" onclick="changeBgClr('Cyan')">Cyan Theme</button></div>
-                <div> <button type="button" onclick="changeBgClr('Grey')">Grey Theme</button></div>
-                <div>Active time: <strong id="active-time"></strong></div>
+                <video width="600" height="400" controls autoplay muted id="video-tag">
+                    <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                        type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+            </div>
+            <div class="dummy-text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. <span class="hidden-texts">It has survived not only five
+                    centuries, but also the leap
+                    into
+                    electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                    release of
+                    Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+                    like
+                    Aldus PageMaker including versions of Lorem Ipsum.</span>
+                <br />
+                <br />
+                <span class="hidden-texts">
+                    It is a long established fact that a reader will be distracted by the readable content of a page
+                    when
+                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution
+                    of
+                    letters, as opposed to using 'Content here, content here', making it look like readable English.
+                    Many
+                    desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,
+                    and a
+                    search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have
+                    evolved
+                    over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                </span>
+                <span class="show-all" onclick="showAll()">show all</span>
             </div>
         </div>
-        <div>
-            <video width="600" height="400" controls>
-                <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
-                    type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
 
-        </div>
-        <div class="dummy-text">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book. <span class="hidden-texts">It has survived not only five
-                centuries, but also the leap
-                into
-                electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
-                release of
-                Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
-                Aldus PageMaker including versions of Lorem Ipsum.</span>
-            <br />
-            <br />
-            <span class="hidden-texts">
-                It is a long established fact that a reader will be distracted by the readable content of a page when
-                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
-                of
-                letters, as opposed to using 'Content here, content here', making it look like readable English. Many
-                desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a
-                search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have
-                evolved
-                over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-            </span>
-            <span class="show-all" onclick="showAll()">show all</span>
-        </div>
     </div>
 
     <script>
-        time=0;
+        time = 0;
         document.getElementById("active-time").innerHTML = time;
         setInterval(() => {
-            time+=1;
+            time += 1;
             document.getElementById("active-time").innerHTML = time;
         }, 1000);
         // slides 
@@ -152,6 +159,7 @@
             slides[slideIndex - 1].style.display = "block";
             dots[slideIndex - 1].className += " active";
         }
+ 
     </script>
 </body>
 

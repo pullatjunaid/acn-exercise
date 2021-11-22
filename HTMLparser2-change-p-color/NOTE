@@ -1,0 +1,7 @@
+Create a program to:
+
+Input a HTML file with 2 paragraphs (both in font-color: black)
+
+Parse the HTML file and output the colour of second paragraph
+
+Change the colour of second paragraph
