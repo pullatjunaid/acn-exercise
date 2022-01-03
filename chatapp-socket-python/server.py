@@ -4,7 +4,7 @@ connected = True
 s = socket.socket()
 
 host="localhost"
-port=7000
+port=7001
 
 s.bind((host,port))
 print('connected....')

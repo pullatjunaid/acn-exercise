@@ -1,5 +1,5 @@
 import socket
-PORT = 7000
+PORT = 7001
 FORMAT = 'utf-8'
 connected = True
 DISCONNECT_MESSAGE = "!DISCONNECT"
@@ -11,7 +11,7 @@ name = input("Enter user name: ")
 client.send(name.encode(FORMAT))
 server = client.recv(2048).decode(FORMAT)
 print("[CONNECTED]" ,server, " has joined....")
-while connected:
+while True:
     message = (client.recv(2048)).decode(FORMAT)
     print(server,": ",message)
     message = input("My msg: ")
